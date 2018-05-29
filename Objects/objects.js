@@ -89,19 +89,20 @@ const stuff = document.createElement("article")
 stuff.setAttribute("id", "distrtict 5" )
 document.body.append(stuff);
 
-let more = document.createElement("p");
-document.textContent(campaign.taxes);
-document.body.appendChild(stuff);
-console.log(more);
+let more =
+document.createTextNode(campaign.district);
+stuff.appendChild(more);
+
 
 let more1 = document.createTextNode(campaign.jobs);
-document.body.appendChild(stuff);
-console.log(more1);
+stuff.appendChild(more1);
+
 
 let more2 = document.createTextNode(campaign.HealthCare);
-document.body.appendChild(stuff);
-console.log(more2);
+stuff.appendChild(more2);
+
 
 let more3= document.createTextNode(campaign.crimeAndInforcement);
-document.body.appendChild(stuff);
-console.log(more3);
+stuff.appendChild(more3);
+
+
